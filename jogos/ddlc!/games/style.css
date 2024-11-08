@@ -1,5 +1,4 @@
-
-body{
+body {
     background-color: black;
 }
 
@@ -58,4 +57,27 @@ body{
   background-color: #333;
   color: #fff;
   margin: auto;
+}
+
+/* Novas regras para as capturas de tela com scroll horizontal */
+.screenshots {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto; /* Permite o scroll horizontal */
+    padding-bottom: 20px;
+}
+
+.screenshot-images {
+    display: flex;
+    gap: 15px;
+    min-width: 100%; /* As imagens ocupam o mínimo necessário para o espaço */
+}
+
+.screenshot-images img {
+    width: 370px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Impede que as imagens encolham */
 }
