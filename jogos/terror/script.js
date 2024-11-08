@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textContent = welcomeText.textContent;
     welcomeText.textContent = "";
 
-    // Dividir a frase em letras, preservando os espaços
+    // Dividir a frase em letras, preservando os espaço
     textContent.split("").forEach((char, index) => {
         const span = document.createElement("span");
         span.textContent = char;
