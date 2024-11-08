@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.welcome-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: drop 1.2s forwards;
+    font-size: 17px;
+}
+
+@keyframes drop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+}
+
+.button {
+    background-color: #ff69b4; /* Rosa fofo */
+    color: #fff;
+    padding: 1px 2px;
+    border: 2px solid #c71585; /* Rosa escuro */
+    border-radius: 5px; /* Bordas arredondadas, opcional */
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s, background-color 0.3s, border-color 0.3s; /* Inclua border-color nas transições */
+    flex-direction: column;
+}
+
+/* Transições de atraso para cada botão */
+.button:nth-child(1) { transition-delay: 0.2s; }
+.button:nth-child(2) { transition-delay: 0.4s; }
+.button:nth-child(3) { transition-delay: 0.6s; }
+.button:nth-child(4) { transition-delay: 0.8s; }
+.button:nth-child(5) { transition-delay: 1.0s; }
+
+/* Cor de fundo ao passar o mouse ou tocar no botão */
+.button:hover {
+    background-color: #ff1493; /* Rosa ao passar o mouse */
+    border-color: #ff69b4; /* Mantém a borda rosa fofo ao passar o mouse */
+}
+
+/* Cor de fundo quando o mouse ou o toque é liberado */
+.button:active {
+    background-color: #444; /* Preto */
+    border-color: #c71585; /* Rosa escuro */
+}
+
+.icone {
+    width: 80px;
+} 
