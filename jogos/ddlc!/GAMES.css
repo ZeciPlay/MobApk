@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #FFB6C1;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Alinha o ícone do jogo e as informações lado a lado */
+.game-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Estilo do ícone do jogo */
+.game-icon img {
+  width: 80px; /* Tamanho ajustável */
+  height: 80px; /* Tamanho ajustável */
+  margin-right: 20px; /* Espaço entre ícone e texto */
+}
+
+/* Estilo das informações do jogo */
+.game-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Botão de download */
+.download-button {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #333;
+  color: #fff;
+  margin: auto;
+}
+
+/* Novas regras para as capturas de tela com scroll horizontal */
+.screenshots {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto; /* Permite o scroll horizontal */
+    padding-bottom: 20px;
+}
+
+.screenshot-images {
+    display: flex;
+    gap: 15px;
+    min-width: 100%; /* As imagens ocupam o mínimo necessário para o espaço */
+}
+
+.screenshot-images img {
+    width: 370px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Impede que as imagens encolham */
+}
