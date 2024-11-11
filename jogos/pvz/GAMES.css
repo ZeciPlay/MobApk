@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
-  background-color: #8B0000;
+  background-color: green;
   border-radius: 10px;
   max-width: 600px;
   margin: auto;
@@ -71,7 +71,7 @@ body {
 .screenshot-images {
     display: flex;
     gap: 15px;
-    min-width: 100%; /* As imagens ocupam o mínimo necessário para o espaço */
+    min-width: 130%; /* As imagens ocupam o mínimo necessário para o espaço */
 }
 
 .screenshot-images img {
