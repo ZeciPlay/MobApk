@@ -34,7 +34,7 @@ body {
     display: inline-block;
     opacity: 0;
     animation: fadeInDown 2s ease forwards, letterAppear 1s ease forwards;
-    animation-delay: 1s; /* Delay para a animação iniciar após um tempo */
+    animation-delay: 0s; /* Delay para a animação iniciar após um tempo */
     white-space: nowrap; /* Evita quebra de linha */
 }
 
@@ -64,7 +64,7 @@ body {
 .category {
     margin: 0;
     padding: 20px;
-    background-color: #333;
+    background-color: #191919;
     border-radius: 8px;
     text-align: left;
     flex: 1 1 calc(33.333% - 20px);

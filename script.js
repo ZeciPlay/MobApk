@@ -38,7 +38,7 @@ function createParticles() {
         particle.style.position = 'absolute';
         particle.style.width = '10px';
         particle.style.height = '10px';
-        particle.style.backgroundColor = 'rgba(128, 0, 128, 0.8)'; // Cor roxa
+        particle.style.backgroundColor = 'rgba(255, 165, 0, 0.8)'; // Cor roxa
         particle.style.borderRadius = '50%';
         particle.style.pointerEvents = 'none'; // Para não bloquear cliques
         particle.style.left = '50%'; // Posição inicial no centro
