@@ -1,0 +1,22 @@
+name: Update GitHub Pages
+
+on:
+  workflow_dispatch:  # Permite iniciar manualmente o workflow
+  push:
+    branches:
+      - main  # Ou outra branch que você use para o GitHub Pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy
+        run: |
+          git pull origin main
+          git add .
+          git commit -m "Rebuild site to update cache" || echo "Nothing to commit"
+          git push origin main
