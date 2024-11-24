@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Creepster', cursive, Arial, sans-serif;
+    font-family: cursive, Arial, sans-serifr;
     background-color: #000;
     color: #d9d9d9;
     display: flex;
@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 30vh;
     overflow: hidden;
+    
 }
 
 .container {
@@ -58,6 +59,7 @@ body {
     flex-direction: column;
     text-shadow: 0 0 10px #660000, 0 0 20px #660000; /* Sombra mais intensa */
     font-weight: bold;
+    display: flex;
 }
 
 .button {
