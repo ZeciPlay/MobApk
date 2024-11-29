@@ -11,9 +11,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
-    padding: 0 100px; /* Aumenta o espaço limpo para anúncios */
+    padding: 0 20px;
 }
 
 .container {
@@ -24,9 +23,9 @@ body {
     display: flex; /* Ativa o flexbox */
     flex-wrap: wrap; /* Permite que os itens se ajustem para a linha seguinte */
     justify-content: center; /* Centraliza as categorias */
-    gap: 20px; /* Espaçamento entre as categorias */
-    overflow-y: auto; /* Permite rolagem vertical, se necessário */
-    max-height: 90vh; /* Limita a altura máxima do contêiner */
+    gap: 250px; /* Espaçamento entre as categorias */
+    overflow-y: auto;
+    max-height: 90vh;
 }
 
 .welcome-text {
@@ -64,13 +63,11 @@ body {
 
 .category {
     margin: 0;
-    padding: 20px;
+    padding: 20px;    
     background-color: #191919;
-    border-radius: 8px;
     text-align: left;
-    flex: 1 1 calc(33.333% - 20px);
     min-width: 250px;
-    box-sizing: border-box;
+    
 }
 
 .category-link {
@@ -89,7 +86,7 @@ body {
 
 .arrow {
     font-size: 1.5em;
-    margin-left: 5px;
+    margin-left: 5px;    
 }
 
 .category p {
@@ -100,16 +97,4 @@ body {
 
 .images {
    width: 80px;
-}
-
-@media (max-width: 768px) {
-    .category {
-        flex: 1 1 calc(50% - 20px); 
-    }
-}
-
-@media (max-width: 480px) {
-    .category {
-        flex: 1 1 100%; 
-    }
 }
