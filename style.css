@@ -13,11 +13,12 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    padding: 0 100px; /* Aumenta o espaço limpo para anúncios */
 }
 
 .container {
-    width: 90%;
-    max-width: 600px;
+    width: 100%; /* Mantém a largura total */
+    max-width: 400px; /* Diminui a largura máxima do contêiner */
     text-align: center;
     margin-top: 20px;
     display: flex; /* Ativa o flexbox */
