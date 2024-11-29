@@ -70,7 +70,7 @@ body {
 
 .screenshot-images {
     display: flex;
-    gap: 15px;
+    gap: 15px;    
     min-width: 130%; /* As imagens ocupam o mínimo necessário para o espaço */
 }
 
