@@ -12,30 +12,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 .container {
     width: 100%; /* Mantém a largura total */
-    max-width: 400px; /* Diminui a largura máxima do contêiner */
+    max-width: 300px; /* Diminuindo a largura máxima do contêiner */
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex; /* Ativa o flexbox */
     flex-wrap: wrap; /* Permite que os itens se ajustem para a linha seguinte */
     justify-content: center; /* Centraliza as categorias */
-    gap: 250px; /* Espaçamento entre as categorias */
+    gap: 20px; /* Espaçamento entre as categorias */
     overflow-y: auto;
-    max-height: 90vh;
+    max-height: 80vh; /* Ajustando a altura máxima */
 }
 
 .welcome-text {
-    margin-bottom: 20px;
-    font-size: 2em;
+    margin-bottom: 0px;
+    font-size: 0.7em; /* Reduzindo o tamanho da fonte */
     display: inline-block;
     opacity: 0;
     animation: fadeInDown 2s ease forwards, letterAppear 1s ease forwards;
-    animation-delay: 0s; /* Delay para a animação iniciar após um tempo */
-    white-space: nowrap; /* Evita quebra de linha */
+    animation-delay: 0s;
+    white-space: nowrap; 
 }
 
 @keyframes fadeInDown {
@@ -63,11 +63,10 @@ body {
 
 .category {
     margin: 0;
-    padding: 20px;    
+    padding: x; /* Diminuindo o preenchimento */
     background-color: #191919;
     text-align: left;
-    min-width: 250px;
-    
+    min-width: 10px; /* Diminuindo a largura mínima */
 }
 
 .category-link {
@@ -79,22 +78,22 @@ body {
 }
 
 .category h2 {
-    font-size: 1.5em;
+    font-size: 0.7em; /* Diminuindo o tamanho da fonte */
     display: flex;
     align-items: center;
 }
 
 .arrow {
-    font-size: 1.5em;
-    margin-left: 5px;    
+    font-size: 0.7em; /* Diminuindo o tamanho da fonte */
+    margin-left: 0.7px;    
 }
 
 .category p {
-    margin-top: 5px;
-    font-size: 1em;
+    margin-top: 0.7px;
+    font-size: 0.7em; /* Diminuindo o tamanho da fonte */
     color: #ccc;
 }
 
 .images {
-   width: 80px;
+   width: 50px; /* Diminuindo o tamanho das imagens */
 }
