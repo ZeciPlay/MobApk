@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 10px;
+    top: 20%;
+    z-index: 1000;
+}
+
+.img {
+   
+}
+.button {
+    width: 105px;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.options-table {
+    display: none; /* Inicialmente oculto */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options-table h3 {
+    margin: 0;
+}
+
+.options-table ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options-table ul li {
+    margin: 10px 0;
+}
+
+.container {
+    width: 100%; /* Mantém a largura total */
+    max-width: 300px; /* Diminuindo a largura máxima do contêiner */
+    text-align: center;
+    margin-top: 0px;
+    display: flex; /* Ativa o flexbox */
+    flex-wrap: wrap; /* Permite que os itens se ajustem para a linha seguinte */
+    justify-content: center; /* Centraliza as categorias */
+    gap: 20px; /* Espaçamento entre as categorias */
+    overflow-y: auto;
+    max-height: 80vh; /* Ajustando a altura máxima */
+}
+
+.welcome-text {
+    margin-bottom: 0px;
+    font-size: 1.7em; /* Reduzindo o tamanho da fonte */
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInDown 2s ease forwards, letterAppear 1s ease forwards;
+    animation-delay: 0s;
+    white-space: nowrap; 
+    color: greenyellow;
+    border: solid;
+    border-radius: 100px;
+    border-color: yellow;
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes letterAppear {
+    0% {
+        visibility: hidden;
+    }
+    10% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.category {
+    margin: 0;
+    padding: x; /* Diminuindo o preenchimento */
+    background-color: #191919;
+    text-align: left;
+    min-width: 100px; /* Diminuindo a largura mínima */
+}
+
+.category-link {
+    text-decoration: none;
+    color: #ffa500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category h2 {
+    font-size: 0.7em; /* Diminuindo o tamanho da fonte */
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 0.7em; /* Diminuindo o tamanho da fonte */
+    margin-left: 0.7px;    
+}
+
+.category p {
+    margin-top: 0.7px;
+    font-size: 0.7em; /* Diminuindo o tamanho da fonte */
+    color: #ccc;
+}
+
+.images {
+   width: 150px; /* Diminuindo o tamanho das imagens */
+}
