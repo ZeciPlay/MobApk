@@ -15,6 +15,45 @@ body {
     padding: 0 5px;
 }
 
+.sidebar {
+    position: fixed;
+    left: 10px;
+    top: 20%;
+    z-index: 1000;
+    background-color: gray;
+
+}
+.img {
+   width: 60px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.options-table {
+    display: none; /* Inicialmente oculto */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options-table h3 {
+    margin: 0;
+}
+
+.options-table ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options-table ul li {
+    margin: 10px 0;
+}
+
 .container {
     width: 100%; /* Mantém a largura total */
     max-width: 300px; /* Diminuindo a largura máxima do contêiner */
@@ -30,12 +69,16 @@ body {
 
 .welcome-text {
     margin-bottom: 0px;
-    font-size: 0.7em; /* Reduzindo o tamanho da fonte */
+    font-size: 1.7em; /* Reduzindo o tamanho da fonte */
     display: inline-block;
     opacity: 0;
     animation: fadeInDown 2s ease forwards, letterAppear 1s ease forwards;
     animation-delay: 0s;
     white-space: nowrap; 
+    color: greenyellow;
+    border: solid;
+    border-radius: 100px;
+    border-color: yellow;
 }
 
 @keyframes fadeInDown {

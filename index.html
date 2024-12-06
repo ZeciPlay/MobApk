@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+   
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3415743773287791"
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LitePKS</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <div class="sidebar">
+    <button id="toggleTable" class="toggle-button">
+        <img src="https://res.cloudinary.com/djrxojhwr/image/upload/​880210-200_xd1ztm.png" alt="Menu" class="img"/>
+    </button>
+    <div id="optionsTable" class="options-table">
+        <h3>Opções</h3>
+        <ul>
+     <li><a class="category" href="index.html">Game Hub</a></li>
+     <li><a class="category" href="romspack/index.html">Roms Pack</a></li>
+     <li><a class="category" onclick="window.location.href='https://chat.whatsapp.com/LkX6q7sQegEDW8eoS6JaBW'">Grupo Zap</a></li>
+        </ul>
+    </div>
+</div>
+
     <div class="container">
        
-        <h1 class="welcome-text">MobiPks</h1>
+        <h1 class="welcome-text">Brazilian Packages</h1>
         
         <section class="category">
  <a href="ACTION/ação.html" class="category-link">
   <h2>ACTION<span class="arrow"></span>&gt</h2></a>
      <a href="ACTION/HK.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/Hollow_Knight_cktd0d.jpg" class="images"></img></a>
      <a href="ACTION/GIRMVALOR.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/Grimvalor_sag21m.jpg" class="images"></img></a></section>
-	    
+
         <section class="category">
 <a href="GTTA/gtta.html"class="category-link">
  <h2>GTTA<span class="arrow"></span>&gt</h2></a>
@@ -37,6 +53,8 @@
      <p></p>
             <a href="PEVZ/NEWSTART.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/pvz3ns_dfq8lm.webp" class="images"></img></a>
             <a href="PEVZ/FUSION.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/fusion_quwvzo.png" class="images"></img></a>
+            <a href="PEVZ/GK.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/download_nqot1o.jpg" class="images"></img></a>
+            <a href="PEVZ/XI.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/icon_g7euy3.png" class="images"></img></a>
         </section>
 
         <section class="category">
@@ -59,7 +77,7 @@
  <a href="HORROR/SNS.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/download_fmyyfz.webp" class="images"></img></a>           
             <a href="HORROR/BP.html"><img src="https://res.cloudinary.com/djrxojhwr/image/upload/bad_parenting_p8o1or.jpg" class="images"></img></a>
         </section>
-
+        
         <section class="category">
 <a href="EFNaF/fnaf.html" class="category-link">
    <h2>EFNaF <span class="arrow"></span>&gt</h2></a>
@@ -73,5 +91,12 @@
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3415743773287791"
      crossorigin="anonymous"></script>
     </div>
+    
+    <script>   document.getElementById('toggleTable').addEventListener('click', function() {
+        const optionsTable = document.getElementById('optionsTable');
+        optionsTable.style.display = optionsTable.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
 </body>
 </html>
