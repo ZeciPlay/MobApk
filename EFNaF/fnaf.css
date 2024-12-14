@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 40hv;
+    height: 60hv;
 }
 
 /* Contêiner centralizado */
@@ -27,7 +27,7 @@ body {
     opacity: 0;
     transform: translateY(-50px);
     animation: drop 1.2s forwards;
-    font-size: 17px;
+    font-size: 10px;
 }
 
 @keyframes drop {
@@ -48,7 +48,7 @@ body {
     color: #fff;
     padding: 1px 1px;
     border: 2px solid #A6784B;
-    font-size: 14px;
+    font-size: 10px;
     cursor: pointer;
     opacity: 0;
     transform: translateY(50px);
@@ -90,7 +90,7 @@ body {
 
 /* Ícone */
 .icone {
-    width: 100px;
+    width: 60px;
 }
 
 /* Efeito de partículas ao clicar */
