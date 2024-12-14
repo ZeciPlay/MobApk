@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
     opacity: 0;
     transform: translateY(-50px);
     animation: drop 1.2s forwards;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 @keyframes drop {
@@ -36,17 +36,17 @@ body {
 
 .buttons {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
 }
 
 .button {
-    width: 105px;
+    width: 100%;
     background-color: #444;
     color: #fff;
-    padding: 10px 15px;
+    padding: 1px 1px;
     border: none;
-    font-size: 14px;
+    font-size: 10px;
     cursor: pointer;
     opacity: 0;
     transform: translateY(50px);
@@ -69,6 +69,6 @@ body {
     }
 
 .icone{
-     width: 72px;
+     width: 60px;
     
 }
